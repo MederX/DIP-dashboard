@@ -16,6 +16,7 @@ from utils import (apply_filters, show_histogram, generate_lasso_mask, apply_enh
 DEBUG = True
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Simple in-memory storage for images (per session)
 local_image_storage = {}
